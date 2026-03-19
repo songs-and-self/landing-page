@@ -505,10 +505,17 @@
               <label for="message">Message</label>
               <textarea id="message" name="message" rows="4"></textarea>
             </div>
+            <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="form-group">
               <label class="checkbox-label">
                 <input type="checkbox" name="privacy" required>
                 <span>I agree to the <a href="privacy.html">Privacy Policy</a> and consent to my data being used to respond to my enquiry. <span class="required" aria-label="required">*</span></span>
+              </label>
+            </div>
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="mailing_list">
+                <span>I'd like to receive occasional updates about Songs &amp; Self and music therapy.</span>
               </label>
             </div>
             <button type="submit" class="btn-submit">Send Message</button>
