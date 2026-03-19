@@ -2105,6 +2105,11 @@ blockquote cite {
     text-align: center;
   }
 
+  .site-footer {
+    position: relative;
+    bottom: auto;
+  }
+
   .custom-select-options {
     max-height: 200px;
   }
