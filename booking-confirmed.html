@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Confirmed | Songs &amp; Self Music Therapy</title>
+  <meta name="robots" content="noindex">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♪</text></svg>">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <main class="confirmation-page">
+    <div class="container">
+      <div class="confirmation-card">
+        <div class="confirmation-icon" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="23" stroke="#5b7e6b" stroke-width="2"/>
+            <path d="M14 24l7 7 13-13" stroke="#5b7e6b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h1>You're booked in!</h1>
+        <p class="confirmation-subtitle" id="confirmationSubtitle">Your introduction call has been confirmed.</p>
+
+        <div class="confirmation-details" id="confirmationDetails" hidden>
+          <div class="detail-row">
+            <span class="detail-label">Date &amp; Time</span>
+            <span class="detail-value" id="eventDateTime"></span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Name</span>
+            <span class="detail-value" id="inviteeName"></span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Confirmation sent to</span>
+            <span class="detail-value" id="inviteeEmail"></span>
+          </div>
+        </div>
+
+        <div class="confirmation-message">
+          <p>Thank you for taking the first step. Georgia will be in touch if anything needs to be confirmed before your call.</p>
+          <p>In the meantime, feel free to explore the site to learn more about music therapy and how it could help.</p>
+        </div>
+
+        <a href="index.html" class="btn-back-home">Back to Songs &amp; Self</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var firstName = params.get('invitee_first_name');
+    var fullName = params.get('invitee_full_name');
+    var name = fullName || [firstName, params.get('invitee_last_name')].filter(Boolean).join(' ');
+    var displayName = firstName || (fullName ? fullName.split(' ')[0] : '');
+    var email = params.get('invitee_email');
+    var startTime = params.get('event_start_time');
+
+    if (name || email || startTime) {
+      document.getElementById('confirmationDetails').removeAttribute('hidden');
+    }
+
+    if (name) {
+      document.getElementById('inviteeName').textContent = name;
+    }
+
+    if (displayName) {
+      document.getElementById('confirmationSubtitle').textContent =
+        'Thanks, ' + displayName + '! Your introduction call has been confirmed.';
+    }
+
+    if (email) {
+      document.getElementById('inviteeEmail').textContent = email;
+    }
+
+    if (startTime) {
+      try {
+        var date = new Date(startTime);
+        var options = {
+          weekday: 'long',
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric',
+          hour: 'numeric',
+          minute: '2-digit',
+          hour12: true
+        };
+        document.getElementById('eventDateTime').textContent =
+          date.toLocaleDateString('en-GB', options);
+      } catch (e) {
+        document.getElementById('eventDateTime').textContent = startTime;
+      }
+    }
+  })();
+  </script>
+
+</body>
+</html>

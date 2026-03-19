@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+index copy*.html
+
+# Docs (not needed for deployment)
+docs/
+
+# Editor
+.vscode/
+.idea/

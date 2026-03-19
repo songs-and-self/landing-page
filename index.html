@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Songs &amp; Self Music Therapy | Creative, Person-Centred Music Therapy in Gloucestershire</title>
+  <meta name="description" content="Songs & Self Music Therapy. HCPC-registered Music Therapist Georgia offers compassionate, creative music therapy in Gloucestershire for children, adults, and older adults.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Songs & Self Music Therapy">
+  <meta property="og:description" content="Creative, Person-Centred Music Therapy in Gloucestershire. HCPC-registered therapist supporting children, adults, and older adults through music.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.songsandself.co.uk">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:locale" content="en_GB">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Songs & Self Music Therapy">
+  <meta name="twitter:description" content="Creative, Person-Centred Music Therapy in Gloucestershire.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♪</text></svg>">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Skip to content -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner" id="cookieBanner" role="alert" hidden>
+    <div class="cookie-inner">
+      <p>This site uses cookies to ensure you get the best experience. By continuing to use this site you consent to the use of cookies in accordance with our <a href="privacy.html">Privacy Policy</a>.</p>
+      <div class="cookie-actions">
+        <button class="btn-cookie-accept" id="cookieAccept">Accept</button>
+        <button class="btn-cookie-decline" id="cookieDecline">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section — fixed, revealed by scrolling -->
+  <section class="hero" aria-label="Introduction">
+    <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    <img src="images/colin-watts-3blV4-86aUo-unsplash.jpg" alt="Broadway Tower in the Cotswolds, Gloucestershire at golden hour" class="hero-img" id="heroImg">
+    <div class="hero-overlay"></div>
+    <div class="hero-brand" aria-hidden="true">Songs &amp; Self</div>
+    <div class="hero-text">
+      <h1 class="hero-tagline">Using Music for Connection,<br>Expression &amp; <em>Well-Being</em></h1>
+    </div>
+  </section>
+
+  <!-- Main content -->
+  <main id="main">
+
+    <!-- Sticky Nav Bar — sits below hero like Munro -->
+    <header class="site-header" id="siteHeader" role="banner">
+      <div class="header-inner">
+        <div class="header-left">
+          <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12h18"/><path d="M3 6h18"/><path d="M3 18h18"/></svg>
+            <span>Menu</span>
+          </button>
+        </div>
+        <nav class="main-nav" id="mainNav" role="navigation" aria-label="Main navigation">
+          <button class="nav-close" id="navClose" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+            </svg>
+          </button>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#music-therapy">What is Music Therapy?</a></li>
+            <li class="nav-item has-submenu">
+              <a href="#approaches" aria-haspopup="true" aria-expanded="false">Approaches</a>
+              <ul class="submenu" role="menu">
+                <li role="none"><a href="#improvisation" role="menuitem">Improvisation &amp; Play</a></li>
+                <li role="none"><a href="#songwriting" role="menuitem">Songwriting &amp; Lyric Analysis</a></li>
+                <li role="none"><a href="#listening" role="menuitem">Listening &amp; Song Sharing</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="#who-i-work-with">Who I Work With</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-right">
+          <a href="/" class="logo" aria-label="Songs and Self — home">Songs &amp; Self</a>
+        </div>
+      </div>
+    </header>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Intro statement below nav — like Munro -->
+    <section class="intro-statement">
+      <div class="container">
+        <div class="intro-layout">
+          <p>Creative, person-centred music therapy in Gloucestershire &mdash; supporting children, adults, and older adults through the power of music. Take the first step with a therapist experienced in the journey.</p>
+          <a href="#contact" class="intro-cta">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Session photo banner -->
+    <div class="session-banner">
+      <img src="images/session-photo.png" alt="A music therapy session — participants playing instruments together" class="session-banner-img">
+    </div>
+
+    <!-- About Georgia -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-layout">
+          <div class="about-text">
+            <span class="section-label">About</span>
+            <h2 id="about-heading">Hello, I'm Georgia</h2>
+            <p>I'm a <strong>HCPC-registered Music Therapist</strong> offering a compassionate and creative approach to supporting clients through music. My work is grounded in person-centred working, where each individual's needs, strengths, and experiences help guide the therapeutic process.</p>
+            <p>Over several years, I have gained experience supporting a wide range of people across different settings. I have delivered music therapy for children and adults with complex and additional needs, as well as adults in psychiatric and forensic services. I have also worked within care homes, supporting older adults living with dementia.</p>
+            <p>Through my longstanding work in an SEN school, I have developed confidence in using a range of low- to high-tech communication methods and sensory integration approaches. These approaches help support individuals with multi-sensory impairments to explore and access the world around them.</p>
+            <p>I believe that working closely with families, carers, and other professionals is essential in creating the most supportive and effective approach for each of my clients.</p>
+            <div class="registration-badges">
+              <div class="badge">
+                <img src="images/hcpc-registered.png" alt="HCPC Registered" class="badge-img">
+              </div>
+              <div class="badge">
+                <img src="images/bamt-member.png" alt="British Association for Music Therapy Member" class="badge-img">
+              </div>
+              <div class="badge">
+                <img src="images/dbs-checked.png" alt="DBS Checked" class="badge-img">
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <!-- Replace with Georgia's photo: place image at images/georgia.jpg -->
+            <img src="images/georgia.png" alt="Georgia, Music Therapist, smiling" class="about-photo">
+            <!-- If no photo yet, uncomment the placeholder below and comment out the img above -->
+            <!-- <div class="about-image-placeholder"></div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What is Music Therapy? -->
+    <section class="music-therapy" id="music-therapy" aria-labelledby="mt-heading">
+      <div class="container">
+        <div class="therapy-layout">
+          <div class="therapy-intro">
+            <span class="section-label">What is Music Therapy?</span>
+            <h2 id="mt-heading">Using words can be difficult.<br><em>Music is our universal language.</em></h2>
+            <blockquote>
+              <p>&ldquo;Music Therapy is an established psychological clinical intervention, delivered by HCPC registered music therapists to help people whose lives have been affected by injury, illness or disability through supporting their psychological, emotional, cognitive, physical, communicative and social needs.&rdquo;</p>
+              <cite>&mdash; British Association of Music Therapy, 2026</cite>
+            </blockquote>
+          </div>
+          <div class="therapy-image">
+            <img src="images/drum-hands.png" alt="Hands playing a drum together during a music therapy session" class="therapy-photo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What to Expect -->
+    <section class="what-to-expect" id="expect" aria-labelledby="expect-heading">
+      <div class="container">
+        <span class="section-label" id="expect-heading">What to Expect</span>
+        <p class="expect-intro">If you're considering music therapy for yourself or someone else, it's important to remember &mdash; <strong>there is no right or wrong, no expectations, and no need for any previous musical knowledge or experience.</strong></p>
+
+        <div class="comparison-table">
+          <div class="comparison-col therapy-col">
+            <h3>Music Therapy</h3>
+            <ul>
+              <li>Use music to achieve clinical goals</li>
+              <li>Focus on developing non-musical skills</li>
+              <li>Emphasis on improvisational music-making</li>
+              <li>Emphasis on treatment and rehabilitation</li>
+              <li>Music therapists hold an MA in Music Therapy</li>
+              <li>No pressure to &lsquo;achieve&rsquo;</li>
+              <li>Therapeutic relationship and time is paramount</li>
+            </ul>
+          </div>
+          <div class="comparison-divider">
+            <span>vs.</span>
+          </div>
+          <div class="comparison-col lesson-col">
+            <h3>Music Lessons</h3>
+            <ul>
+              <li>Use music to educate (instrumental, performance, technical skills)</li>
+              <li>Focus on developing musical skills</li>
+              <li>Emphasis on note learning and reading</li>
+              <li>Emphasis on knowledge</li>
+              <li>Music teachers often (but not always) hold a PGCE</li>
+              <li>Goal, performance and achievement orientated</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approaches -->
+    <section class="approaches" id="approaches" aria-labelledby="approaches-heading">
+      <div class="container">
+        <span class="section-label" id="approaches-heading">Approaches</span>
+        <p class="approaches-intro">Working within a psychodynamic framework, my work brings in elements of talking therapy, musical improvisation and play, emotive songwriting, lyric analysis, as well as song sharing and listening together.</p>
+
+        <div class="approaches-grid">
+          <div class="approach-card" id="improvisation">
+            <div class="approach-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+              </svg>
+            </div>
+            <h3>Musical Improvisation &amp; Play</h3>
+            <p>Play is a special place for exploration, development and well-being across all ages. Within music therapy, play can be found by experimenting with different sounds, rhythms, dynamics and styles. Music becomes a shared game to connect, communicate and build confidence without words.</p>
+            <p>Within the musical improvisation, emotions are expressed and feelings are encapsulated by the feeling of the improvisation created.</p>
+          </div>
+
+          <div class="approach-card" id="songwriting">
+            <div class="approach-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/>
+              </svg>
+            </div>
+            <h3>Songwriting &amp; Lyric Analysis</h3>
+            <p>Songwriting in therapy offers a creative way to express thoughts, feelings, and personal stories. Together we might write new lyrics, adapt an existing song, or explore themes that matter to you.</p>
+            <p>This process can help you make sense of experiences, build confidence, and find your voice &mdash; literally and metaphorically. Lyric analysis can also be part of this work, using the words of familiar songs as a starting point for reflection, discussion, and emotional processing.</p>
+            <p>Both approaches are flexible and can be adapted for different ages, abilities, and therapeutic goals. Above all, they provide a creative pathway for clients to explore who they are and how they feel &mdash; supported every step of the way.</p>
+          </div>
+
+          <div class="approach-card" id="listening">
+            <div class="approach-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+              </svg>
+            </div>
+            <h3>Listening &amp; Song Sharing</h3>
+            <p>Song listening and song sharing are gentle yet meaningful ways for clients to connect with themselves and others during music therapy. Clients may listen to music chosen by the therapist or bring in songs that hold personal significance. Together, they explore the emotions, memories, and associations that arise, using the music as a supportive backdrop for reflection and conversation.</p>
+            <p>Sharing songs can help clients express parts of their identity, communicate feelings that may be hard to put into words, or simply enjoy a moment of connection. Listening to music in a therapeutic setting can also promote relaxation, grounding, and emotional regulation, offering a safe space to pause and tune into the present moment.</p>
+            <p>At its heart, song listening and sharing create opportunities for clients to feel heard, understood, and connected through the music that matters to them.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who I Work With -->
+    <section class="who-i-work-with" id="who-i-work-with" aria-labelledby="wiww-heading">
+      <div class="who-i-work-with-banner">
+        <img src="images/care-home-session.jpeg" alt="Georgia leading a music therapy session in a care home with residents playing instruments" class="wiww-banner-img">
+      </div>
+      <div class="container">
+        <span class="section-label">Who I Work With</span>
+        <h2 id="wiww-heading">Supporting people of all ages across a range of settings</h2>
+        <div class="client-grid">
+          <div class="client-card">
+            <div class="client-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2a5 5 0 0 1 5 5v2a5 5 0 0 1-10 0V7a5 5 0 0 1 5-5z"/><path d="M3.5 21a8.5 8.5 0 0 1 17 0"/>
+              </svg>
+            </div>
+            <h3>Children &amp; Young People</h3>
+            <p>Supporting children with complex and additional needs, including those in SEN schools, using communication methods and sensory integration approaches.</p>
+          </div>
+          <div class="client-card">
+            <div class="client-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3>Adults</h3>
+            <p>Working with adults with complex and additional needs, as well as those in psychiatric and forensic services, offering a safe space for expression and connection.</p>
+          </div>
+          <div class="client-card">
+            <div class="client-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <h3>Older Adults &amp; Dementia Care</h3>
+            <p>Supporting older adults living with dementia within care home settings, using music to promote connection, comfort, and moments of joy.</p>
+          </div>
+          <div class="client-card">
+            <div class="client-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+              </svg>
+            </div>
+            <h3>SEN Schools</h3>
+            <p>Longstanding experience working in special educational settings, using low- to high-tech communication and sensory approaches to help individuals explore and access the world around them.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Get Started -->
+    <section class="get-started" id="get-started" aria-labelledby="gs-heading">
+      <div class="container">
+        <span class="section-label">How to Get Started</span>
+        <h2 id="gs-heading">Beginning your music therapy journey</h2>
+        <div class="steps-grid">
+          <div class="step">
+            <div class="step-number" aria-hidden="true">1</div>
+            <h3>Book a free call</h3>
+            <p>Schedule a relaxed, no-obligation introduction call to chat about your needs and find out how music therapy could help.</p>
+          </div>
+          <div class="step-arrow" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+          <div class="step">
+            <div class="step-number" aria-hidden="true">2</div>
+            <h3>Initial consultation</h3>
+            <p>We'll arrange an initial assessment to understand your needs, goals, and circumstances. This is a chance for you to ask questions and for us to explore whether music therapy is the right fit.</p>
+          </div>
+          <div class="step-arrow" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+          <div class="step">
+            <div class="step-number" aria-hidden="true">3</div>
+            <h3>Begin sessions</h3>
+            <p>Sessions are tailored to each individual and typically take place weekly. Together we'll review progress and adapt the approach as needed, always keeping the client at the centre.</p>
+          </div>
+        </div>
+        <div class="booking-widget">
+          <div class="calendly-inline-widget" data-url="https://calendly.com/georgia-songsandself/30min?hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials" aria-labelledby="test-heading">
+      <div class="container">
+        <span class="section-label">What People Say</span>
+        <h2 id="test-heading" class="sr-only">Testimonials</h2>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card">
+            <p>&ldquo;Georgia has a wonderful ability to connect with my son. Since starting music therapy, he's more engaged, more communicative, and visibly happier. We've seen changes we never expected.&rdquo;</p>
+            <footer>
+              <cite>&mdash; Parent of a child attending SEN school sessions</cite>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p>&ldquo;Music therapy gave me a way to express things I couldn't put into words. The sessions were a safe space where I could just be myself, and Georgia made me feel completely at ease from the very first session.&rdquo;</p>
+            <footer>
+              <cite>&mdash; Adult client</cite>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p>&ldquo;We've seen a remarkable difference in our residents since Georgia began working with us. There's more laughter, more interaction, and some residents who rarely engage are now singing along and smiling.&rdquo;</p>
+            <footer>
+              <cite>&mdash; Care home activities coordinator</cite>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <span class="section-label">Frequently Asked Questions</span>
+        <h2 id="faq-heading">Common questions about music therapy</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>How long is a music therapy session?</summary>
+            <div class="faq-answer">
+              <p>Sessions are typically 30 to 60 minutes, depending on the individual's needs and the setting. Children's sessions are often shorter, while adult sessions may be longer. The length is always tailored to what works best for the client.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>How many sessions will be needed?</summary>
+            <div class="faq-answer">
+              <p>This varies for every individual. Some people benefit from a short block of sessions (6&ndash;12 weeks), while others engage in longer-term therapy. We'll discuss what feels right during the initial consultation and review progress regularly together.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Do I need to be able to play an instrument or sing?</summary>
+            <div class="faq-answer">
+              <p>Absolutely not. Music therapy requires no musical skill, experience, or training. The focus is on using music as a tool for expression and connection &mdash; not performance. You don't need to be &lsquo;musical&rsquo; to benefit.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Can a parent or carer attend sessions?</summary>
+            <div class="faq-answer">
+              <p>Yes, in many cases families and carers are welcome and encouraged to be part of the process. This is especially true for younger children or individuals who feel more comfortable with a familiar person present. We can discuss what works best for each situation.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Is music therapy available on the NHS?</summary>
+            <div class="faq-answer">
+              <p>Music therapy is recognised by the NHS and is sometimes funded through local services, schools, or care settings. In other cases, sessions are privately funded. I'm happy to discuss options and help you explore what may be available.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Where do sessions take place?</summary>
+            <div class="faq-answer">
+              <p>Sessions can take place in a variety of settings, including schools, care homes, community spaces, or a dedicated therapy room. I work across Gloucestershire, covering areas including Cheltenham, Gloucester, Stroud, Cirencester, and the Forest of Dean. Please get in touch to discuss your location.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Who can refer someone for music therapy?</summary>
+            <div class="faq-answer">
+              <p>Anyone can make a referral or self-refer. Referrals commonly come from parents, carers, teachers, SENCOs, social workers, GPs, and other healthcare professionals. You don't need a formal diagnosis to explore whether music therapy could help.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Areas Covered -->
+    <section class="areas-covered" id="areas" aria-labelledby="areas-heading">
+      <div class="container">
+        <div class="areas-layout">
+          <div class="areas-text">
+            <span class="section-label">Areas Covered</span>
+            <h2 id="areas-heading">Music therapy across Gloucestershire</h2>
+            <p>I offer sessions in schools, care homes, community settings, and dedicated therapy spaces across the county. Areas covered include:</p>
+            <ul class="areas-list">
+              <li>Cheltenham</li>
+              <li>Gloucester</li>
+              <li>Stroud</li>
+              <li>Cirencester</li>
+              <li>Tewkesbury</li>
+              <li>Forest of Dean</li>
+              <li>Cotswolds</li>
+            </ul>
+            <p class="areas-note">Can't see your area? Please get in touch &mdash; I may still be able to help.</p>
+          </div>
+          <div class="areas-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d318868.20031364386!2d-2.4632271!3d51.8462963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871a4e5c57da8e5%3A0x5765ef486536bb37!2sGloucestershire!5e0!3m2!1sen!2suk!4v1710000000000!5m2!1sen!2suk"
+              width="100%"
+              height="350"
+              style="border:0; border-radius: 6px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Map showing Gloucestershire coverage area">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="contact-text">
+            <span class="section-label">Get in Touch</span>
+            <h2 id="contact-heading">Interested in Music Therapy?</h2>
+            <p>If you'd like to find out more about music therapy, discuss a referral, or have any questions, please don't hesitate to get in touch.</p>
+            <a href="#get-started" class="btn-book-call">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/>
+              </svg>
+              Book a Free Introduction Call
+            </a>
+            <div class="contact-details">
+              <a href="mailto:Georgia@songsandself.onmicrosoft.com" class="contact-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+                Georgia@songsandself.onmicrosoft.com
+              </a>
+            </div>
+          </div>
+          <div class="form-success" id="formSuccess" hidden>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <circle cx="20" cy="20" r="19" stroke="rgba(255,249,238,0.4)" stroke-width="1.5"/>
+              <path d="M12 20l5 5 11-11" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3>Message sent</h3>
+            <p>Thank you for getting in touch. Georgia will get back to you as soon as possible.</p>
+          </div>
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/xreyodap" method="post" novalidate>
+            <div class="form-group">
+              <label for="name">Name <span class="required" aria-label="required">*</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span class="required" aria-label="required">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="enquiry">I'm enquiring about</label>
+              <div class="custom-select" id="enquirySelect">
+                <input type="hidden" name="enquiry" id="enquiry" value="">
+                <button type="button" class="custom-select-trigger" aria-haspopup="listbox" aria-expanded="false">
+                  <span class="custom-select-value">Select...</span>
+                  <svg class="custom-select-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5"/></svg>
+                </button>
+                <ul class="custom-select-options" role="listbox" tabindex="-1">
+                  <li role="option" data-value="child">Music therapy for a child</li>
+                  <li role="option" data-value="adult">Music therapy for an adult</li>
+                  <li role="option" data-value="older-adult">Music therapy for an older adult</li>
+                  <li role="option" data-value="school">Music therapy in a school setting</li>
+                  <li role="option" data-value="care-home">Music therapy in a care home</li>
+                  <li role="option" data-value="general">General enquiry</li>
+                </ul>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="privacy" required>
+                <span>I agree to the <a href="privacy.html">Privacy Policy</a> and consent to my data being used to respond to my enquiry. <span class="required" aria-label="required">*</span></span>
+              </label>
+            </div>
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="privacy" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <h4>Songs &amp; Self</h4>
+          <p>Creative, Person-Centred Music Therapy in Gloucestershire</p>
+          <div class="footer-badges">
+            <span class="footer-badge">HCPC Registered</span>
+            <span class="footer-badge">BAMT Member</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#music-therapy">What is Music Therapy?</a></li>
+            <li><a href="#approaches">Approaches</a></li>
+            <li><a href="#who-i-work-with">Who I Work With</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:Georgia@songsandself.onmicrosoft.com">Georgia@songsandself.onmicrosoft.com</a></li>
+          </ul>
+          <h4 class="footer-subheading">Areas Covered</h4>
+          <p class="footer-areas">Cheltenham, Gloucester, Stroud, Cirencester, Tewkesbury, Forest of Dean &amp; the Cotswolds</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Songs &amp; Self Music Therapy. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="accessibility.html">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <script src="js/main.js"></script>
+  <script src="js/custom-select.js"></script>
+  <script src="js/water-ripple.js"></script>
+</body>
+</html>
